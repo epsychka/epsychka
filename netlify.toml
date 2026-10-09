@@ -1,0 +1,16 @@
+# Netlify settings: the app lives in the student-planner/ folder.
+[build]
+  base = "student-planner"
+  command = "npm run build"
+  # Relative to "base", i.e. student-planner/dist
+  publish = "dist"
+
+[build.environment]
+  # Vite 8 needs a recent Node.js version.
+  NODE_VERSION = "22"
+
+# Always fetch the newest service worker so app updates arrive quickly.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
