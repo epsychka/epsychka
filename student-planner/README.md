@@ -92,8 +92,11 @@ No server or database is needed for the current version.
 
 - **Netlify Drop** (easiest): run `npm run build`, open <https://app.netlify.com/drop> and drag the
   `dist` folder onto the page. You get an `https://….netlify.app` address.
-- **Vercel / Netlify connected to GitHub** (auto-update on every push): import the repository, set
-  *Root directory* = `student-planner`, *Build command* = `npm run build`, *Output directory* = `dist`.
+- **Netlify connected to GitHub** (auto-update on every push): *Add new project → Import an existing
+  project → GitHub → this repository → Deploy*. Nothing needs to be filled in: the settings are read
+  from `netlify.toml` in the repository root.
+- **Vercel**: import the repository, set *Root directory* = `student-planner`,
+  *Build command* = `npm run build`, *Output directory* = `dist`.
 - **GitHub Pages**: works as well, because the build uses relative paths (`base: './'`).
 
 Remember: each device/browser keeps its own data until cloud sync is added.
