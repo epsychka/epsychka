@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "watermarks-remover": {
+      "source": { "source": "github", "repo": "guillaumemeyer/watermarks-remover" }
+    }
+  },
+  "enabledPlugins": {
+    "watermarks-remover@watermarks-remover": true
+  }
+}
